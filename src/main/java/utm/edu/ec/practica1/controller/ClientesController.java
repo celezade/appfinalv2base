@@ -27,6 +27,7 @@ public class ClientesController {
     }
     public List<Clientes> findClientesByValue(@RequestParam String cedula)
      {
+
         return clientesServices.findClientesByValue(cedula);
     }
 
