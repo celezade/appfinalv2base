@@ -8,6 +8,7 @@ import utm.edu.ec.practica1.repository.ICustomerRepository;
 import java.util.List;
 
 @Service
+
 public class CustomerService implements ICustomerService{
 
     @Autowired

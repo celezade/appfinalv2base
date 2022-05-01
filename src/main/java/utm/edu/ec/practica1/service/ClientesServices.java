@@ -3,6 +3,7 @@ package utm.edu.ec.practica1.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import utm.edu.ec.practica1.entity.Clientes;
+import utm.edu.ec.practica1.entity.Customer;
 import utm.edu.ec.practica1.repository.IClientesRepository;
 
 import javax.transaction.Transactional;
@@ -19,7 +20,14 @@ public class ClientesServices implements IClientesService{
 
 
     @Override
+    public List<Clientes> findClientes() {
+        return clientesRepository.findAll();
+    }
+
+    @Override
     public List<Clientes> findClientesByValue(String cedula) {return clientesRepository.findClientesByValue (cedula);}
+
+
 
     @Override
     public void deleteClientes(String cedula) {

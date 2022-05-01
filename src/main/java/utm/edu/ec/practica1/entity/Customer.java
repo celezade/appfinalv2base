@@ -9,7 +9,7 @@ import java.util.UUID;
 
 @Data
 @Entity
-@Builder
+
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,6 +19,10 @@ public class Customer {
     private String name;
     private String lastname;
     private String phone;
-    private String email;
+    private String correo;
     private String address;
+    private String usuario;
+    private String clave;
+
+
 }

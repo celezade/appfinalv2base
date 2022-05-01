@@ -9,5 +9,8 @@ public interface IClientesService {
     void saveClientes (Clientes clientes);
     List<Clientes> findClientesByValue(String cedula);
 
+
     void deleteClientes (String cedula);
+
+    List<Clientes> findClientes();
 }
